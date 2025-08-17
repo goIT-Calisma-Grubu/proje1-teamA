@@ -1,0 +1,117 @@
+.creator{
+    background: #36B37E;
+    font-family: "Host Grotesk", sans-serif;
+}
+.creator > .container{
+    width: 1440px;
+    padding: 80px 105px 70px 114px;
+    margin: 0 auto;
+}
+.creator-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.creator-header h2{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.2px;
+    width: 310px;
+    color : #FFFFFF;
+}
+.creator-header p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color : #FFFFFF;
+    width: 585px;
+}
+.teacher-list{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.teacher-list-item{
+    background: #FFFFFF;
+    border-radius: 4px;
+    width: calc((100% - 90px)/4);
+    padding: 10px;
+}
+.teacher-list-item img{
+    width: 100%;
+    margin-bottom:24px;
+}
+.teacher-box{
+    padding: 0 10px;
+}
+.teacher-box h3{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    color:  #183B56;
+    margin-bottom: 8px;
+}
+.teacher-box p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #5A7184;
+    margin-bottom: 14px;
+}
+.creator-paginations{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.paginations{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.pagination{
+    width: 31px;
+    height: 5px;
+    background: #FFFFFF;
+    opacity: .3;
+    display: inline-block;
+}
+.pagination.active{
+    background: #FAAD13;
+    opacity: 1;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .creator > .container{
+        width: 768px;
+        padding: 49px 20px;
+    }
+    .teacher-list-item{
+        width: calc((100% - 30px)/2);
+    }
+}
+@media screen and (min-width: 320px) and (max-width:767px){
+    .creator > .container{
+        width: 320px;
+        padding: 49px 20px;
+    }
+    .creator-header{
+        flex-direction: column;
+    }
+    .creator-header h2, .creator-header p {
+        width: 100%;
+    }
+    .teacher-list{
+        flex-wrap: wrap;
+    }
+    .teacher-list-item{
+        width: 100%;
+    }
+    .creator-paginations{
+        flex-direction: column;
+    }
+}
