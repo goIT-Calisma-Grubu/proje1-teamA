@@ -95,13 +95,13 @@
   }
 
   .survey-left img {
-    width: 50%; /* resim yarım alanı kaplasın */
+    width: 50%;
     height: 100%;
     object-fit: cover;
   }
 
   .survey-txt {
-    font-size: 22px; /* yazıyı küçült */
+    font-size: 22px;
   }
 
   .profile-text p.name {
@@ -113,10 +113,9 @@
   }
 }
 
-/* ---- Telefon (≤768px) ---- */
 @media (max-width: 768px) {
   .survey-con {
-    flex-direction: column; /* resim üstte, yazılar altta */
+    flex-direction: column;
     width: 100%;
     height: auto;
   }
@@ -143,7 +142,7 @@
   }
 
   .survey-profile {
-    position: static; /* absolute kaldır, normal akışa girsin */
+    position: static;
     justify-content: center;
     margin-top: 20px;
   }
