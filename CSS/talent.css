@@ -1,0 +1,277 @@
+.talent {
+  font-family: "HK Grotesk", sans-serif;
+  color: #183b56;
+}
+
+.talent-header {
+  display: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  max-height: 131px;
+}
+
+.talent-header h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  padding-bottom: 47px;
+}
+
+.talent-firms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.talent-firms li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 150px;
+  height: 52px;
+  background: #fc5a5a;
+}
+
+.talent-firms li img {
+  width: 114px;
+  height: 25px;
+}
+
+.talent-line {
+  margin: 0 auto;
+  width: 100px;
+  height: 2px;
+  background: #5a7184;
+  opacity: 0.1;
+}
+
+.talent-class {
+  width: 100%;
+  height: 474px;
+  margin-top: 51px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(179, 186, 197, 0.1) 100%);
+}
+
+.talent-container {
+  width: 1056px;
+  display: flex;
+  align-items: center;
+  margin-left: calc((100vw - 1056px) * 150 / (150 + 234));
+  margin-right: calc((100vw - 1056px) * 234 / (150 + 234));
+  gap: 20px;
+}
+
+.talent-container-left {
+  margin-top: 51px;
+}
+
+.talent-rating {
+  display: flex;
+  gap: 9.28px;
+  padding-bottom: 24px;
+}
+.talent-rating img {
+  width: 16.72px;
+}
+
+.talent-comment-text {
+  width: 652px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 44px;
+  letter-spacing: 0.16px;
+  padding-bottom: 36px;
+}
+
+.talent-comment-author {
+  padding-bottom: 68px;
+}
+
+.talent-comment-name {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+.talent-comment-class {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0px;
+}
+
+.talent-class-button {
+  width: 142px;
+  height: 46px;
+  background-color: rgba(54, 179, 126, 0.1);
+  border: none;
+  border-radius: 4px;
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #36b37e;
+}
+
+.talent-container-right img {
+  width: 384px;
+  height: 474px;
+}
+
+/* For Tablets */
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .talent-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 616px;
+  }
+
+  .talent-header h2 {
+    font-weight: 600;
+    font-size: 22px;
+    padding-bottom: 20px;
+  }
+
+  .talent-line {
+    background: white;
+  }
+
+  .talent-class {
+    width: 100%;
+    height: 880px;
+  }
+
+  .talent-container {
+    width: 768px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  .talent-container-left {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .talent-comment-text {
+    text-align: center;
+    padding-bottom: 32px;
+  }
+
+  .talent-comment-author {
+    padding-bottom: 64px;
+  }
+
+  .talent-container-right img {
+    margin-top: 41px;
+    height: 433px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .talent-header {
+    display: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 266px;
+    max-height: 228px;
+  }
+
+  .talent-header h2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .talent-firms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .talent-firms li {
+    width: 126px;
+    height: 45px;
+    background: #fc5a5a;
+  }
+  .talent-line {
+    background: white;
+  }
+
+  .talent-class {
+    width: 100%;
+    height: 739px;
+    background: #ffffff;
+  }
+
+  .talent-container {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  .talent-container-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .talent-comment-text {
+    width: 280px;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.22px;
+    text-align: center;
+    padding-bottom: 28px;
+  }
+
+  .talent-comment-author {
+    padding-bottom: 40px;
+  }
+
+  .talent-comment-name {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.22px;
+    text-align: center;
+  }
+
+  .talent-comment-class {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .talent-container-right img {
+    margin-top: 29px;
+    margin-left: calc((100vw - 217px) * 34 / (34 + 69));
+    margin-right: calc((100vw - 217px) * 69 / (34 + 69));
+    width: 217px;
+    height: 294px;
+  }
+}
