@@ -1,0 +1,183 @@
+.hero {
+  display: flex;
+  height: 845px;
+  background: linear-gradient(
+    180deg,
+    #eaeff0 0%,
+    #ebf0f1 18.91%,
+    #eeeff1 32.2%,
+    #c5c6c8 71.56%,
+    #b9bbba 87.57%,
+    #b6b8b8 93.4%,
+    #afb0b2 100%
+  );
+  align-items: flex-end;
+}
+
+.container {
+  padding: 0 150px 0;
+  width: 100%;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  gap: 45px;
+}
+
+.hero-image {
+  background-image: url("../images/graduationmobile.jpg");
+  height: 295px;
+  width: 280px;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-image img {
+  height: 295px;
+  width: 280px;
+}
+
+.hero-content {
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.hero-title {
+  text-align: center;
+  width: 300px;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  line-height: 52px;
+}
+
+.hero-higlight {
+  border-bottom: 4px solid #db7646;
+}
+
+.hero-subtitle {
+  color: #5a7184;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0;
+  width: 250px;
+  text-align: center;
+}
+
+.hero-form {
+  width: 280px;
+  margin-top: 12px;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.hero-input {
+  height: 106px;
+  padding: 17px 17px 70px 20px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+.hero-btn {
+  bottom: 0;
+  width: 95%;
+  margin: 8px;
+  right: 0;
+  position: absolute;
+  background-color: #36b37e;
+  border: none;
+  color: #fff;
+  padding: 12px 19px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* ===== MEDIA QUERIES ===== */
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 59px 0;
+  }
+  .hero {
+    height: 915px;
+  }
+  .hero-wrapper {
+    gap: 0;
+  }
+  .hero-image {
+    background-image: url("../images/graduationtablet.jpg");
+    height: 419px;
+    width: 713px;
+    margin-top: 74px;
+  }
+  .hero-title {
+    width: 590px;
+    font-size: 56px;
+    line-height: 52px;
+    text-align: center;
+  }
+  .hero-subtitle {
+    width: 503px;
+    font-weight: 400;
+  }
+  .hero-form {
+    width: 487px;
+  }
+  .hero-input {
+    padding: 17px 178px 17px 20px;
+    height: auto;
+  }
+  .hero-btn {
+    width: auto;
+    margin: 6px;
+    bottom: auto;
+  }
+  .hero-content {
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 0 150px 0;
+  }
+  .hero {
+    height: 645px;
+  }
+  .hero-wrapper {
+    flex-direction: row;
+  }
+  .hero-title {
+    line-height: 68px;
+    width: 495px;
+  }
+  .hero-image {
+    background-image: url("../images/graduationdesktop.jpg");
+    height: 529px;
+    width: 433px;
+    margin-top: 0px;
+  }
+  .hero-content {
+    gap: 40px;
+    padding: 0;
+  }
+  .hero-input {
+    padding: 17px 178px 17px 20px;
+    height: auto;
+    border: 2px solid transparent;
+  }
+  input:focus {
+    outline: none;
+    border: 2px solid #36b37e;
+  }
+}
